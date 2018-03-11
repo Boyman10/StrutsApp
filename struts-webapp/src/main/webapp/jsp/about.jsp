@@ -31,6 +31,7 @@
         <li>Date du build : ${maven.build.timestamp}</li>
     </ul>
 </div>
+<p>${1+2}</p>
 
 <%@ include file="_include/footer.jsp" %>
 </body>
