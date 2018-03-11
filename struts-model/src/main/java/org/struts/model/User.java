@@ -1,4 +1,4 @@
-package org.struts.business.model;
+package org.struts.model;
 
 /*
  * Entity class to store User  properties
