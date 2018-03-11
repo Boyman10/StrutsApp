@@ -3,6 +3,7 @@ package org.struts.model;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
  * Article entity with details of an article
