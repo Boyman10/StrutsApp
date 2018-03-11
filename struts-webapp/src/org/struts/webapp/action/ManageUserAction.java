@@ -1,11 +1,17 @@
 package org.struts.webapp.action;
 
+import java.util.List;
+
+import com.opensymphony.xwork2.ActionSupport;
+
 /**
  * Class mapping the manager user action
  * @author John
  * @version 1
  */
 public class ManageUserAction extends ActionSupport {
+
+	private static final long serialVersionUID = 7246774814524999309L;
 
 	// The actionsupport already bring interesting stuff
 	private Integer id;
@@ -20,10 +26,13 @@ public class ManageUserAction extends ActionSupport {
 
 	/**
 	 * Method which returns users
+	 * @return success
 	 */
-	public doList() {
+	public String doList() {
 		
 		// Listing users here
+		
+		return ActionSupport.SUCCESS;
 	}
 }
 
