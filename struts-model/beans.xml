@@ -8,5 +8,7 @@
 
 
 	<bean id="user" class="org.struts.model.User"></bean>
+	<bean id="article" class="org.struts.model.Article"></bean>
+	
 	<context:annotation-config></context:annotation-config>
 </beans>

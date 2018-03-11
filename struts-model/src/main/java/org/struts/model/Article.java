@@ -2,6 +2,8 @@ package org.struts.model;
 
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * Article entity with details of an article
  * @author hackme
@@ -59,6 +61,10 @@ public class Article {
 		return author;
 	}
 
+	/**
+	 * Set author - allow injecting the user bean defined in our bean conf. file
+	 */
+	@Autowired
 	public void setAuthor(User author) {
 		this.author = author;
 	}
