@@ -15,7 +15,10 @@ public class Article {
 	private String title;
 	private String content;
 	private Date submissionDate;
+	
 	// The author of this article
+	@Autowired(required=true)
+	@Qualifier("user")
 	private User author;
 
 	/**
@@ -26,7 +29,7 @@ public class Article {
 	}
 	
 	public Article(String title, String content, Date submissionDate, User author) {
-		super();
+
 		this.title = title;
 		this.content = content;
 		this.submissionDate = submissionDate;
@@ -64,7 +67,7 @@ public class Article {
 	/**
 	 * Set author - allow injecting the user bean defined in our bean conf. file
 	 */
-	@Autowired
+	//@Autowired
 	public void setAuthor(User author) {
 		this.author = author;
 	}

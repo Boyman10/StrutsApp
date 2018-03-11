@@ -1,11 +1,14 @@
 package org.struts.model;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+
 /*
  * Entity class to store User  properties
  * POJO
  * @author boy
  * @version 1
  */
+@Qualifier("user") // designate the bean of this type
 public class User {
 
 	private int id;
