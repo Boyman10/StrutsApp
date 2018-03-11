@@ -37,7 +37,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-bom</artifactId>
+			<artifactId>struts2-core</artifactId> <!-- only need core -->
 		</dependency>
 	</dependencies>
 	<build>
