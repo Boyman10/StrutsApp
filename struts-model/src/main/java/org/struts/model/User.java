@@ -13,6 +13,25 @@ public class User {
 	private String email;
 	private String password;
 
+	/**
+	 * Empty Constructor
+	 */
+	public User() {
+		
+	}
+	
+	/**
+	 * Constructor class initiliazing User
+	 * @param username
+	 * @param email
+	 * @param password
+	 */
+	public User(String username, String email, String password) {
+		super();
+		this.username = username;
+		this.email = email;
+		this.password = password;
+	}
 	public String getUsername() {
 		return username;
 	}
