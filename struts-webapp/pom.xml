@@ -10,17 +10,17 @@
 	</parent>
 
 	<artifactId>struts-webapp</artifactId>
-	
-	
-    <properties>
-        
-        <application.name>Struts Web APplication</application.name>
-        <maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
 
-        <buildTimestamp>${maven.build.timestamp}</buildTimestamp>
-    </properties>
-    
-    
+
+	<properties>
+
+		<application.name>Struts Web APplication</application.name>
+		<maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
+
+		<buildTimestamp>${maven.build.timestamp}</buildTimestamp>
+	</properties>
+
+
 	<packaging>war</packaging>
 	<name>struts-webapp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -32,14 +32,26 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>javax.servlet.jsp-api</artifactId>
-		</dependency>
 	</dependencies>
 	<build>
 		<finalName>struts-webapp</finalName>
 		<plugins>
+					<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+
+			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -58,5 +70,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
+			
 	</build>
 </project>
