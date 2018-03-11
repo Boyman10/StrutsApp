@@ -18,6 +18,12 @@ public class ManageUserAction extends ActionSupport {
 		return id;
 	}
 
-
+	/**
+	 * Method which returns users
+	 */
+	public doList() {
+		
+		// Listing users here
+	}
 }
 
