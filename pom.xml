@@ -5,11 +5,13 @@
   <groupId>org.rhm.struts</groupId>
   <artifactId>struts-app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging><!-- needs to be pom to work with modules -->
 
   <name>struts-app</name>
   <url>http://maven.apache.org</url>
-
+<description>
+	A simple Struts2 application project bringing Maven and Spring ioC - We will simply add a login form, a register form and an administrative interface to post articles and allow comments moderation.
+</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
