@@ -2,6 +2,8 @@ package org.struts.webapp.action;
 
 import java.util.List;
 
+import org.struts.model.User;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
