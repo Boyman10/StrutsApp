@@ -11,5 +11,5 @@
 	<bean id="article" class="org.struts.model.Article"></bean>
 	-->
 	<context:annotation-config></context:annotation-config>
-	<context:component-scan base-package=""></context:component-scan>
+	<context:component-scan base-package="org.struts.model"></context:component-scan>
 </beans>

@@ -4,12 +4,14 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
 /**
  * Article entity with details of an article
  * @author hackme
  *
  */
+@Component // designate this class as a bean
 public class Article {
 
 	private int id;

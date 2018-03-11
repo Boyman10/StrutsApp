@@ -1,6 +1,7 @@
 package org.struts.model;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
 /*
  * Entity class to store User  properties
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
  * @author boy
  * @version 1
  */
+@Component
 @Qualifier("user") // designate the bean of this type
 public class User {
 
