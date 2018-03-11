@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.rhm.struts</groupId>
+<groupId>org.rhm.struts</groupId> 
   <artifactId>struts-app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging><!-- needs to be pom to work with modules -->
@@ -16,10 +16,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>
+<dependencyManagement>
+    <dependencies>
+            <!-- ===== Modules ===== -->
+            <dependency>
+                <groupId>org.rhm.struts</groupId>
+                <artifactId>struts-webapp</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+</dependencies>
+</dependencyManagement>
 
 
-  </dependencies>
   <modules>
     <module>struts-webapp</module>
   </modules>
