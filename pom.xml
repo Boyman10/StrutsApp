@@ -71,7 +71,7 @@
 		<module>struts-webapp</module>
 		<module>struts-business</module>
 		<module>struts-model</module>
-    <module>struts-consumer</module>
+   		<module>struts-consumer</module>
   </modules>
 
 	<!-- Packaging preparation -->
