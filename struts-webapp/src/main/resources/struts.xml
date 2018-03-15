@@ -11,7 +11,11 @@
         <action name="index">
             <result>/index.jsp</result>
         </action>
-        
+        <!-- Action "login" -->
+        <action name="login">
+            <result>/login.jsp</result>
+        </action>
+                
         
         <!-- Listing users action -->
         <action name="user_list"
