@@ -27,7 +27,11 @@
 
 <h2>Login form</h2>
 
-
+<s:form action="login">
+    <s:textfield name="userBean.userame" label="Your login name" />
+    <s:password  name="userBean.password" label="Your password" />
+    <s:submit value="Submit" />
+</s:form>
 
 <%@ include file="_include/footer.jsp" %>
 

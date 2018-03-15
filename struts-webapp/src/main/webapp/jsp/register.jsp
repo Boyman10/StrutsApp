@@ -29,10 +29,10 @@
 
 https://struts.apache.org/getting-started/coding-actions.html
     <s:form action="register">
-      <s:textfield name="personBean.firstName" label="First name" />
-      <s:textfield name="personBean.lastName" label="Last name" />
-      <s:textfield name="personBean.email"  label ="Email"/>  
-      <s:textfield name="personBean.age"  label="Age"  />
+      <s:textfield name="userBean.username" label="Username" />
+      <s:textfield name="userBean.email" label="Email" />
+      <s:password name="userBean.password"  label ="Password"/>  
+
       <s:submit/>
     </s:form>
 

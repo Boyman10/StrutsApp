@@ -21,11 +21,19 @@ public class ManageUserAction extends ActionSupport {
 	private Integer id;
 	
 	private List<User> listUsers;
-	private User user;
+	private User userBean;
 	
 	public Integer getId() {
 		
 		return id;
+	}
+
+	public User getUser() {
+		return userBean;
+	}
+
+	public void setUser(User user) {
+		this.userBean = user;
 	}
 
 	/**
@@ -45,6 +53,18 @@ public class ManageUserAction extends ActionSupport {
 	 * @return
 	 */
 	public String doDetail() {
+		
+		
+		return ActionSupport.SUCCESS;
+	}
+	
+	/**
+	 * Login method checking user sign in
+	 * @return
+	 */
+	public String doLogin() {
+		
+		// Call service class to retrieve and compare state in database
 		
 		
 		return ActionSupport.SUCCESS;

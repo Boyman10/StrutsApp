@@ -1,1 +1,2 @@
 org\struts\consumer\App.class
+org\struts\consumer\dao\UsersDAO.class

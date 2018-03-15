@@ -12,8 +12,9 @@
             <result>/index.jsp</result>
         </action>
         <!-- Action "login" -->
-        <action name="login">
-            <result>/login.jsp</result>
+        <action name="login" class="org.struts.webapp.action.ManageUserAction"
+                method="doLogin">
+            <result>/jsp/login.jsp</result>
         </action>
                 
         
