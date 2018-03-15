@@ -14,9 +14,13 @@
         <!-- Action "login" -->
         <action name="login" class="org.struts.webapp.action.ManageUserAction"
                 method="doLogin">
-            <result>/jsp/login.jsp</result>
+            <result>/jsp/success.jsp</result>
         </action>
-                
+        <!-- Action "register" -->
+        <action name="register" class="org.struts.webapp.action.ManageUserAction"
+                method="doRegister">
+            <result>/jsp/success.jsp</result>
+        </action>                
         
         <!-- Listing users action -->
         <action name="user_list"

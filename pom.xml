@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.rhm.struts</groupId>
@@ -16,6 +17,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
+		<log4j2.version>2.10.0</log4j2.version>
 	</properties>
 
 	<dependencyManagement>
@@ -38,14 +40,7 @@
 			</dependency>
 
 
-			<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-bom -->
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts2-bom</artifactId>
-				<version>2.5.14.1</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+
 
 			<!-- https://mvnrepository.com/artifact/org.springframework/spring-framework-bom -->
 			<dependency>
@@ -56,7 +51,13 @@
 				<scope>import</scope>
 			</dependency>
 
-
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-bom</artifactId>
+				<version>${log4j2.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
 			<!-- ===== Modules ===== -->
 			<dependency>
 				<groupId>org.rhm.struts</groupId>
@@ -71,8 +72,8 @@
 		<module>struts-webapp</module>
 		<module>struts-business</module>
 		<module>struts-model</module>
-   		<module>struts-consumer</module>
-  </modules>
+		<module>struts-consumer</module>
+	</modules>
 
 	<!-- Packaging preparation -->
 	<build>

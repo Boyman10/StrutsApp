@@ -69,5 +69,17 @@ public class ManageUserAction extends ActionSupport {
 		
 		return ActionSupport.SUCCESS;
 	}
+	
+	/**
+	 * Register method
+	 * @return
+	 */
+	public String doRegister() {
+		
+		// Call service class to store and compare state in database
+		
+		
+		return ActionSupport.SUCCESS;
+	}	
 }
 

@@ -35,14 +35,20 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-core</artifactId> <!-- only need core -->
-		</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-bom -->
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-core</artifactId>
+				<version>2.5.14.1</version>
+			</dependency>
 		<dependency>
 			<groupId>org.rhm.struts</groupId>
 			<artifactId>struts-model</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
