@@ -16,7 +16,7 @@
 
 		<application.name>Struts Web APplication</application.name>
 		<maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
-
+		<log4j2.version>2.10.0</log4j2.version>
 		<buildTimestamp>${maven.build.timestamp}</buildTimestamp>
 	</properties>
 
@@ -35,20 +35,17 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 		</dependency>
-			<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-bom -->
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts2-core</artifactId>
-				<version>2.5.14.1</version>
-			</dependency>
+
 		<dependency>
 			<groupId>org.rhm.struts</groupId>
 			<artifactId>struts-model</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-bom -->
 		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.5.14.1</version>
 		</dependency>
 	</dependencies>
 	<build>
