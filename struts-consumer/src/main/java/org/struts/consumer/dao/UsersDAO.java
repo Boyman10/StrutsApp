@@ -2,16 +2,20 @@ package org.struts.consumer.dao;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
 import org.struts.model.User;
 
 /**
  * Our users DAO
- * 
+ * using POstgresql
  * @author John
  *
  */
+@Component("usersDAO")
 public class UsersDAO {
 
+	private NamedParameterJdbcTemplate jdbc;
+	
 	/**
 	 * Method to get the list of users.
 	 * @return
