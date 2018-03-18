@@ -3,37 +3,40 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-    <package name="default" extends="struts-default">
-        <!-- default Action -->
-        <default-action-ref name="index" />
+	<package name="default" extends="struts-default">
+		<!-- default Action -->
+		<default-action-ref name="index" />
 
-        <!-- Action "index" -->
-        <action name="index">
-            <result>/index.jsp</result>
-        </action>
-        <!-- Action "login" -->
-        <action name="login" class="org.struts.webapp.action.ManageUserAction"
-                method="doLogin">
-            <result>/jsp/success.jsp</result>
-        </action>
-        
-		<action name="registerInput" class="org.struts.webapp.action.ManageUserAction"
-                method="doRegister">
-		    <result name="input">/jsp/register.jsp</result>
+		<!-- Action "index" -->
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		<!-- Action "login" -->
+		<action name="login" class="org.struts.webapp.action.ManageUserAction"
+			method="doLogin">
+			<result>/jsp/success.jsp</result>
 		</action>
 
-        
-        <!-- Action "register" -->
-        <action name="register" class="org.struts.webapp.action.ManageUserAction"
-                method="doRegister">
-            <result>/jsp/success.jsp</result>
-        </action>                
-        
-        <!-- Listing users action -->
-        <action name="user_list"
-                class="org.struts.webapp.action.ManageUserAction"
-                method="doList">
-            <result>/jsp/admin/listusers.jsp</result>
-        </action>        
-    </package>
+		<action name="registerInput" class="org.struts.webapp.action.ManageUserAction"
+			method="doRegister">
+			<result name="input">/jsp/register.jsp</result>
+		</action>
+
+
+		<!-- Action "register" -->
+		<action name="register" class="org.struts.webapp.action.ManageUserAction"
+			method="doRegister">
+			<result>/jsp/success.jsp</result>
+		</action>
+
+		<!-- Listing users action -->
+		<action name="user_list" class="org.struts.webapp.action.ManageUserAction"
+			method="doList">
+			<result>/jsp/admin/listusers.jsp</result>
+		</action>
+
+
+
+
+	</package>
 </struts>
