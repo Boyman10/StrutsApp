@@ -35,7 +35,7 @@
 	
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-		classpath:/struts-consumer/src/main/java/org/struts/consumer/config/dao-context.xml
+		classpath*:/org/struts/consumer/config/dao-context.xml
 		</param-value>
 	</context-param>
 	

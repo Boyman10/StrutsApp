@@ -10,7 +10,7 @@
 
 	<context:annotation-config></context:annotation-config>
 	<context:component-scan base-package="org.struts.consumer.dao"></context:component-scan>
-	<jee:jndi-lookup jndi-name="jdbc/postgresql" id="dataSource"
+	<jee:jndi-lookup jndi-name="jdbc/postgres" id="dataSource"
 		expected-type="javax.sql.DataSource">
 	</jee:jndi-lookup>
 </beans>
