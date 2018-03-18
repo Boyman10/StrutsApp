@@ -28,11 +28,11 @@ public class ManageUserAction extends ActionSupport {
 		return id;
 	}
 
-	public User getUser() {
+	public User getUserBean() {
 		return userBean;
 	}
 
-	public void setUser(User user) {
+	public void setUserBean(User user) {
 		this.userBean = user;
 	}
 

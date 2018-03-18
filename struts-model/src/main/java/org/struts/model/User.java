@@ -59,6 +59,9 @@ public class User {
 		return id;
 	}
 
-
+    public String toString() {
+        return "User Name: " + getUsername() + " Password:  " + getPassword() + 
+        " Email:      " + getEmail() ;
+    }
 
 }
