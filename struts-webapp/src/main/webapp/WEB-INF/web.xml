@@ -25,5 +25,18 @@
 		<res-auth>Container</res-auth>
 	</resource-ref>
 
+	<!-- tell spring to load extra configuration files -->
+	<listener>
 
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<context-param>
+	
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		classpath:/struts-consumer/src/main/java/org/struts/consumer/config/dao-context.xml
+		</param-value>
+	</context-param>
+	
 </web-app>
