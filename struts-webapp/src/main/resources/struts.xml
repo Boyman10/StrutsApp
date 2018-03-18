@@ -19,6 +19,7 @@
         <!-- Action "register" -->
         <action name="register" class="org.struts.webapp.action.ManageUserAction"
                 method="doRegister">
+            <result name="input">/jsp/register.jsp</result>    
             <result>/jsp/success.jsp</result>
         </action>                
         

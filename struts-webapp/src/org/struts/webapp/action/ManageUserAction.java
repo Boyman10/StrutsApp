@@ -81,5 +81,20 @@ public class ManageUserAction extends ActionSupport {
 		
 		return ActionSupport.SUCCESS;
 	}	
+	
+	
+	public void validateRegistration(){
+	    if (userBean.getUsername().length() == 0) {
+	        addFieldError("userBean.userName", "User name is required.");
+	    }
+
+	    if (userBean.getEmail().length() == 0) {
+	        addFieldError("userBean.email", "Email is required.");
+	    }
+
+	    if (userBean.getPassword().length() < 6) {
+	        addFieldError("userBean.password", "Password is required and must be more than 6 characters");
+	    }
+	}
 }
 
