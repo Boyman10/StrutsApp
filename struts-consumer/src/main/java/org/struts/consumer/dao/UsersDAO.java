@@ -17,6 +17,14 @@ public class UsersDAO {
 	private NamedParameterJdbcTemplate jdbc;
 	
 	/**
+	 * Empty constructor
+	 */
+	public UsersDAO() {
+		
+		System.out.println("Good on you users DAO is loaded fine !!");
+	}
+	
+	/**
 	 * Method to get the list of users.
 	 * @return
 	 */
