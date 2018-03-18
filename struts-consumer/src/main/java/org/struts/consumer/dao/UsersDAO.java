@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.struts.model.User;
@@ -62,7 +63,12 @@ public class UsersDAO {
 				
 	}
 
-	public void createUser(User user) {
+	public boolean createUser(User user) {
 
+		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(user);
+		
+		return jdbc.query("INSERT INTO user(username,email,password) values(:username,:email,:password)", params) == 1;
+		
+		
 	}
 }
