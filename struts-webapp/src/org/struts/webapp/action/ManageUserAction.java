@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.struts.consumer.UserService;
 import org.struts.model.User;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -27,6 +29,8 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	
 	private List<User> listUsers;
 	private User userBean;
+	
+	private UserService userService;
 	
 	// Handling session
 	private Map<String, Object> userSession ;
@@ -87,12 +91,17 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	public String doRegister() {
 		
 		// Call service class to store and compare state in database
-		
+		userService.doCreate(this.userBean); 
 		
 		return ActionSupport.SUCCESS;
 	}	
+
 	
-	
+	@Autowired
+	public void setUserService(UserService userService) {
+		this.userService = userService;
+	}
+
 	public void validateRegistration(){
 	    if (userBean.getUsername().length() == 0) {
 	        addFieldError("userBean.userName", "User name is required.");
@@ -112,6 +121,7 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	 */
 	@Override
 	public void setSession(Map<String, Object> arg0) {
+		
 		userSession = arg0 ;
 
 		

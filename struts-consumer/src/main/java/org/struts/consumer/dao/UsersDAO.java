@@ -20,4 +20,10 @@ public class UsersDAO {
 		
 		return null;
 	}
+	
+	
+	public void createUser(User user) {
+		
+		
+	}
 }

@@ -11,14 +11,16 @@
 		<action name="index">
 			<result>/index.jsp</result>
 		</action>
+		
 		<!-- Action "login" -->
 		<action name="login" class="org.struts.webapp.action.ManageUserAction"
 			method="doLogin">
+			<result name="input">/jsp/login.jsp</result>
 			<result>/jsp/success.jsp</result>
 		</action>
 
 		<action name="registerInput" class="org.struts.webapp.action.ManageUserAction"
-			method="doRegister">
+			method="input">
 			<result name="input">/jsp/register.jsp</result>
 		</action>
 

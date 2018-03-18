@@ -8,6 +8,9 @@
         <dependent-module archiveName="struts-model-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/struts-model/struts-model">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="struts-consumer-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/struts-consumer/struts-consumer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="struts-webapp"/>
         <property name="java-output-path" value="/struts-webapp/target/classes"/>
     </wb-module>

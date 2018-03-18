@@ -59,6 +59,11 @@
 			<artifactId>log4j-api</artifactId>
 			<type>test-jar</type>
 		</dependency>
+		<dependency>
+			<groupId>org.rhm.struts</groupId>
+			<artifactId>struts-consumer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>struts-webapp</finalName>
