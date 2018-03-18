@@ -15,6 +15,9 @@ ${1+3}
 <a href="jsp/about.jsp">ABOUT</a>
 
 <p><a href="jsp/login.jsp">Please login</a> to get access.</p>
-<p><a href="jsp/register.jsp">Please register</a> to get access.</p>
+
+<s:url action="registerInput" var="registerInputLink" />
+<p><a href="${registerInputLink}">Please register</a>.</p>
+
 </body>
 </html>
