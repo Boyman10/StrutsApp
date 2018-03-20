@@ -33,6 +33,7 @@ public class UserService {
 	
 	public void doCreate(User user) {
 		
+		System.out.println(user);
 		usersDAO.createUser(user);
 	}
 }

@@ -30,6 +30,7 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	private List<User> listUsers;
 	private User userBean;
 	
+	
 	private UserService userService;
 	
 	// Handling session
@@ -90,8 +91,9 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	 */
 	public String doRegister() {
 		
+		System.out.println(this.userBean);
 		// Call service class to store and compare state in database
-		userService.doCreate(this.userBean); 
+		this.userService.doCreate(this.userBean); 
 		
 		return ActionSupport.SUCCESS;
 	}	
