@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.struts.consumer.UserService;
 import org.struts.model.User;
 
@@ -15,6 +16,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @author John
  * @version 1
  */
+@Controller
 public class ManageUserAction extends ActionSupport implements SessionAware  {
 
 	private static final long serialVersionUID = 7246774814524999309L;
@@ -30,7 +32,7 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	private List<User> listUsers;
 	private User userBean;
 	
-	
+	@Autowired
 	private UserService userService;
 	
 	// Handling session
@@ -99,8 +101,10 @@ public class ManageUserAction extends ActionSupport implements SessionAware  {
 	}	
 
 	
-	@Autowired
+	
 	public void setUserService(UserService userService) {
+		
+		System.out.println("User service coming");
 		this.userService = userService;
 	}
 
