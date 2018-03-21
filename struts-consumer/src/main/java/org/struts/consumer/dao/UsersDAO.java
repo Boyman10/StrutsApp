@@ -44,7 +44,7 @@ public class UsersDAO {
 	 */
 	public List<User> getUsers() {
 		
-		return jdbc.query("SELECT * FROM user", new RowMapper<User>() {
+		return jdbc.query("SELECT * FROM tb_user", new RowMapper<User>() {
 
 			@Override
 			public User mapRow(ResultSet rs, int nRows) throws SQLException {
@@ -76,7 +76,7 @@ public class UsersDAO {
 		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(user);
 		
 		System.out.println("entering dao method to create user");
-		return jdbc.update("INSERT INTO user(username,email,password) values(:username,:email,:password)", params) == 1;
+		return jdbc.update("INSERT INTO tb_user(username,email,password) values(:username,:email,:password)", params) == 1;
 		
 		
 	}
