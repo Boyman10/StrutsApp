@@ -38,6 +38,7 @@
 		classpath*:/org/struts/consumer/config/dao-context.xml
 		classpath*:/org/struts/consumer/config/service-context.xml
 		classpath:/org/struts/webapp/config/controller-context.xml
+		
 		</param-value>
 	</context-param>
 	

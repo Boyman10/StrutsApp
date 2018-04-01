@@ -3,8 +3,6 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-
-	
 	<package name="default" extends="struts-default">
 		<!-- default Action -->
 		<default-action-ref name="index" />
@@ -21,15 +19,11 @@
 			<result>/jsp/success.jsp</result>
 		</action>
 
-		<action name="registerInput" class="org.struts.webapp.action.ManageUserAction"
-			method="input">
-			<result name="input">/jsp/register.jsp</result>
-		</action>
-
 
 		<!-- Action "register" -->
 		<action name="register" class="org.struts.webapp.action.ManageUserAction"
 			method="doRegister">
+			<result name="input">/jsp/register.jsp</result>
 			<result>/jsp/success.jsp</result>
 		</action>
 
